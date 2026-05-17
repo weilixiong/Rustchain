@@ -20,6 +20,7 @@ Fix:
 """
 
 import os
+os.environ.setdefault(RC_P2P_SECRET, os.urandom(32).hex())
 import sys
 import json
 import sqlite3
